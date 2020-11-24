@@ -1,0 +1,90 @@
+blue-bottom-border {
+    border-bottom: 1px solid #5D85CB;
+}
+
+nav {
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-around;
+    height: 8vh;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+nav a img {
+    width: 30px;
+    height: auto;
+    padding-top: 5px;
+}
+
+nav a img:hover {
+    width: 32px;
+    height: auto;
+}
+
+nav ul.nav-list {
+    display: flex;
+    list-style-type: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul.nav-list li a {
+    color: #5D85CB;
+    text-decoration: none;
+}
+
+nav ul.nav-list li a:hover {
+    font-weight: 700;
+}
+
+/* Toggle Navbar Menu */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    height: 15px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    left: -10px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #5D85CB;
+    border-radius: 5px;
+    transition: all 0.6s;
+}
+
+/* Hamburger Menu Animation */
+.nav-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.nav-toggle span:last-child {
+    transform-origin: 0 100%;
+}
+
+.nav-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.nav-toggle input:checked ~ span:last-child {
+    transform: rotate(-45deg);
+}
+
+.nav-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}

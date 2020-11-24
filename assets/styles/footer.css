@@ -1,0 +1,7 @@
+footer {
+    border-top: 1px solid #5D85CB;
+}
+footer p {
+    padding: 1rem;
+    font-size: 10px;
+}

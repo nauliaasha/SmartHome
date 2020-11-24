@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+@import "../styles/header-navbar.css";
+@import "../styles/main.css";
+@import "../styles/footer.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+/* =============== Responsive =============== */
+@media only screen and (max-width: 1024px) {
+    main {
+        padding: 0 2em;
+    }
+
+    nav {
+        padding: 0 2rem;
+        justify-content: space-around;
+    }
+    
+    nav ul.nav-list {
+        width: 50%;
+    }
+    
+    .container {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Navbar Menu */
+    nav ul.nav-list {
+        width: 60%;
+    }
+
+    /* Cover */
+    article#cover {
+        text-align: center;
+        display: block;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 2rem;
+    }
+    
+    article#cover img {
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+    /* Benefits */
+    article#benefits .ben-items {
+        display: block;
+    }
+
+    article#benefits ul {
+        padding: 0 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    article#benefits .ben-items img {
+        width: 100%;
+    }
+
+    /* Contact Us */
+    article#contact .contact-item {
+        display: block;
+    }
+
+    article#contact .about,
+    form {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    /* Navbar Menu */
+    .nav-toggle {
+        display: flex;
+    }
+
+    nav {
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+    
+    nav ul.nav-list {
+        position: absolute;
+        top: 8vh;
+        left: 0;
+        padding-bottom: 10px;
+        flex-direction: column;
+        align-items: center;
+        background-color: #5D85CB;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul.nav-list li {
+        padding: 10px 0 5px 0;
+    }
+
+    nav ul.nav-list li a {
+        color: #ffffff;
+    }
+
+    nav ul.slide {
+        opacity: 1;
+        width: 100%;
+        transform: translateX(0);
+    }
+    
+    /* Content */
+    div.items {
+        display: block;
+        padding-bottom: 0;
+    }
+
+    div#content figure {
+        padding-bottom: 2rem;
+    }
+
+    /* Benefits */
+    article#benefits ul {
+        padding: 0;
+    }
+
+    /* Contact Us */
+    div.items div.social-media {
+        padding: 2rem 0;
+    }
+}
+
+@media only screen and (max-width: 342px) {
+    aside#profile .card figure figcaption {
+        margin: 0.5rem 3rem;
+    }
+}
+
+@media only screen and (max-width: 310px) {
+    aside#profile .card figure figcaption {
+        margin: 0.5rem 1.2rem;
+    }
+}

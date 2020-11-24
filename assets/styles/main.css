@@ -1,0 +1,265 @@
+main {
+    padding: 0 4em;
+}
+
+.container {
+    padding: 0 5em;
+}
+
+.card {
+    box-shadow: 0 1px 10px 0 #c7ebeb;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.blue-border-sticky {
+    border-bottom: 1px solid #5D85CB;
+    position: -webkit-sticky;
+    position: sticky;    
+    top: 0;
+    box-shadow: 0 1px 10px 0 #c7ebeb;
+}
+
+/* Cover */
+article#cover {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    padding: 5rem 0;
+}
+
+article#cover img {
+    width: 40%;
+    height: auto;
+}
+
+div.caption h1 {
+    color:#5D85CB;
+    font-size: 35px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+div.caption p {
+    margin-bottom: 3rem;
+}
+
+div.caption .btn-order {
+    background-color: #5D85CB;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+    margin-top: 2rem;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+div.caption a.btn-order:hover {
+    font-weight: 700;
+    background-color: #86B2F3;
+    box-shadow: 0 1px 10px 0 #c7ebeb;
+}
+
+/* =============== Content =============== */
+div#content article {
+    padding: 5rem 0;
+    border-top: 1px solid #c7ebeb;
+}
+
+div#content h2,
+aside#profile h2 {
+    color:#86B2F3;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-bottom: 4rem;
+}
+
+.icon {
+    width: 70px;
+}
+
+.icon:hover {
+    border-style: none;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px 0 #c7ebeb;
+}
+
+/* Facilities & Components */
+div.items {
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Benefits */
+article#benefits .ben-items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+article#benefits .ben-items img {
+    width: 40%;
+}
+
+article#benefits li {
+    list-style-type: none;
+    padding-bottom: 1.5rem;
+    text-align: left;
+    font-style: oblique;
+}
+article#benefits li i.far {
+    color: #86B2F3;
+}
+
+/* Contact Us */
+iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+article#contact .about {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+article#contact .contact-item,
+article#contact .social-media {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+article#contact .social-media i.socmed-icon {
+    color: #5D85CB;
+    font-size: 1.5em;
+    margin-right: 2rem;
+    background-color: #EAFCFC;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+article#contact .social-media i.socmed-icon:hover {
+    color: #86B2F3;
+    font-weight: bolder;
+    box-shadow: 0 1px 10px 0 #c7ebeb;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+form input {
+    border: none;
+    width: 100%;
+    border-bottom: 2px groove  #5D85CB;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form label {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+form textarea {
+    border: none;
+    border-bottom: 2px groove  #5D85CB;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+input.btn-submit {
+    margin-top: 1rem;
+    background-color: #5D85CB;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+input.btn-submit:hover {
+    font-weight: 700;
+    background-color: #86B2F3;
+    box-shadow: 0 1px 10px 0 #c7ebeb;
+}
+
+/* Biodata */
+aside#profile {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 5rem;
+    font-size: 10px;
+}
+
+aside#profile .card figure {
+    margin-bottom: 1rem;
+}
+
+aside#profile .card figure img {
+    width: 100px;
+    height: auto;
+}
+
+aside#profile .card figure figcaption {
+    margin: 0.5rem 4rem;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #86B2F3;
+    color: #ffffff;
+
+}
+
+aside#profile .card section {
+    text-align: left;
+}
+
+aside#profile label {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px groove #5D85CB;
+    padding: 0 5px;
+    font-weight: 700;
+}
+
+aside#profile p {
+    padding: 7px;
+}
+
+aside#profile .profile-social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside#profile .profile-social-media a {
+    margin: 5px;
+}
+
+aside#profile .profile-icon {
+    color: #5D85CB;
+    font-size: 1.5em;
+    background-color: #EAFCFC;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+aside#profile .profile-icon:hover {
+    color: #86B2F3;
+    font-weight: bolder;
+    box-shadow: 0 1px 10px 0 #c7ebeb;
+}
