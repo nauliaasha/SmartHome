@@ -165,6 +165,7 @@ form input {
     border-bottom: 2px groove  #5D85CB;
     padding: 10px;
     margin-bottom: 10px;
+    outline: none;
 }
 
 form label {
@@ -177,6 +178,7 @@ form textarea {
     border-bottom: 2px groove  #5D85CB;
     margin-top: 0;
     margin-bottom: 10px;
+    outline: none;
 }
 
 input.btn-submit {
